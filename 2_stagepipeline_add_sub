@@ -1,0 +1,42 @@
+a=int(input("enter number 1:"))
+b=int(input("enter number 2:"))
+c=4
+f=0
+ch=int(input("1.add,2.sub,3.mul,4.divi:"))
+if ch==1:
+    res=a+b
+elif ch==2:
+    res=a-b
+elif ch==3:
+    res=a*b
+elif ch==4:
+    if b==0:
+        print("denominator can not be zero:")
+        print("wrong input")
+        f=1 
+    else:
+        res=a/b 
+else:
+     ptint("wrong input")
+     f=1 
+if f==0:
+    print("the cycle value is",c)
+    ins=int(input("enter number of instructions:"))
+    print("the performance measure:",ins/c)
+    print("res=",res)
+ output:
+ enter number 1:12
+enter number 2:10
+1.add,2.sub,3.mul,4.divi:1
+the cycle value is 4
+enter number of instructions:4
+the performance measure: 1.0
+res= 22
+enter number 1:12
+enter number 2:10
+1.add,2.sub,3.mul,4.divi:2
+the cycle value is 4
+enter number of instructions:4
+the performance measure: 1.0
+res= 2
+> 
